@@ -1,4 +1,4 @@
-const StartSatenikQuiz=function (){
+
 const skipperImg = new Image();
 skipperImg.src ="skipper_hero.jpg"
 const kowalskiImg = new Image();
@@ -15,7 +15,7 @@ const question= document.getElementById("question")
 let quizScore = 0;
 const questions =[
   ["Your fear...","fear3.png","fear1.png","fear2.png","cockroach.png"],// sources
-  ["Which weapon do you prefer?","Quizweapon3.png","dynamite.png","hammer.png","Quizweapon1.png"],
+  ["Which weapon do you prefer?","QuizWeapon2.jpg","dynamite.png","hammer.png","Quizweapon1.png"],
   ["Your favourite food...","sushi.PNG","tropicalfruits.png","paperclip.png","icecream.png"],
   ["What is your preferable profession?","SPY.png","madscientist.png","psychopath.png","soldier.PNG"],
   ["Your favourite place...","spain.png","norway.png","qajaran.png","kipr.png"]
@@ -67,5 +67,4 @@ const startTheGame= function ()//Taron
   quiz.innerHTML="<img src='"+source+"' width=500 height=500 id='result'>";
   setTimeout(function(){quiz.addEventListener("click",function(e){quiz.innerHTML=""})},100)
 
-}
 }
